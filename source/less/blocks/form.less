@@ -117,14 +117,18 @@
 .form__icon-tel,
 .form__icon-email {
   position: absolute;
-  top: 19px;
+  top: 16px;
   right: 13px;
   width: 20px;
   height: 21px;
 
+  @media (min-width: @tablet-width) {
+    top: 21px;
+  }
+
   @media (min-width: @desktop-width) {
     right: 17px;
-    top: 15px;
+    top: 20px;
   }
 }
 
@@ -254,18 +258,18 @@
   font-size: 20px;
   line-height: 30px;
   margin-left: 12px;
-  padding: 16px 10px 9px 20px;
+  padding: 10px 10px 10px 20px;
   flex-grow: 1;
   border: 1px solid @color-grey-form;
   align-items: center;
 
   @media (min-width: @tablet-width) {
     margin-left: 21px;
-    padding: 20px 18px 14px;
+    padding: 15px 18px 14px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 14px 20px 5px;
+    padding: 15px 20px 15px 10px;
     line-height: 30px;
     margin-left: 14px;
   }
